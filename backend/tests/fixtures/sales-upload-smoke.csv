@@ -1,0 +1,4 @@
+Date,Product,Qty,Price,Revenue,Category,Purchase Cost
+2026-10-28,Smoke Test Tea,2,5,10,Grocery,3
+2026-10-29,Smoke Test Rice,1,20,20,Grocery,12
+2026-10-30,Smoke Test Invalid,-1,7,7,Test,4

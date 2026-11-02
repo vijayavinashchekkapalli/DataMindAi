@@ -1,0 +1,248 @@
+.signup-page {
+  min-height: 100vh;
+  padding: 45px 20px;
+  background:
+    radial-gradient(circle at top, #e5f2e5, transparent 55%),
+    #fffdf5;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-card {
+  width: 100%;
+  max-width: 530px;
+  background: #fffdf5;
+  padding: 40px;
+  border: 1px solid #dce8d8;
+  border-radius: 18px;
+  box-shadow: 0 15px 45px #245c3512;
+}
+
+.back-home {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #3a7d44;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.signup-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 25px;
+  color: #3a7d44;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.signup-logo b {
+  color: #245c35;
+}
+
+.signup-card h1 {
+  text-align: center;
+  color: #245c35;
+  font-size: 29px;
+  margin-top: 25px;
+}
+
+.signup-subtitle {
+  text-align: center;
+  color: #829082;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.name-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.input-group {
+  margin-bottom: 19px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: #36563c;
+  margin-bottom: 9px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #d6e5d5;
+  background: #fff;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  color: #183a24;
+  transition: 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #3a7d44;
+  box-shadow: 0 0 0 3px #3a7d4415;
+}
+
+.password-input {
+  display: flex;
+  align-items: center;
+  border: 1px solid #d6e5d5;
+  background: white;
+  border-radius: 8px;
+  padding-right: 12px;
+}
+
+.password-input:focus-within {
+  border-color: #3a7d44;
+}
+
+.password-input input {
+  border: none;
+  box-shadow: none !important;
+}
+
+.password-input button {
+  border: none;
+  background: transparent;
+  color: #66816a;
+  display: flex;
+}
+
+.password-rules {
+  background: #f3f7ec;
+  border: 1px solid #e1eadc;
+  border-radius: 9px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.password-rules > p {
+  font-size: 13px;
+  font-weight: 700;
+  color: #36563c;
+  margin-bottom: 12px;
+}
+
+.rules-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.password-rule {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 11px;
+}
+
+.password-rule.valid {
+  color: #268343;
+}
+
+.password-rule.invalid {
+  color: #9b7770;
+}
+
+.strength-text {
+  margin-top: 13px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #3a7d44;
+}
+
+.match-success {
+  color: #268343;
+  display: block;
+  margin-top: 7px;
+}
+
+.match-error {
+  color: #dc4444;
+  display: block;
+  margin-top: 7px;
+}
+
+.create-account-btn {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  background: #3a7d44;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.create-account-btn:disabled {
+  background: #a7bba5;
+  cursor: not-allowed;
+}
+
+.create-account-btn:not(:disabled):hover {
+  background: #245c35;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px #245c3530;
+}
+
+.error-message,
+.success-message {
+  padding: 12px;
+  border-radius: 7px;
+  margin-bottom: 15px;
+  font-size: 13px;
+}
+
+.error-message {
+  color: #bd3333;
+  background: #fff0f0;
+}
+
+.success-message {
+  color: #26743c;
+  background: #e8f5e9;
+}
+
+.signin-link {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 13px;
+  color: #788778;
+}
+
+.signin-link a {
+  color: #3a7d44;
+  font-weight: 700;
+}
+
+@media (max-width: 500px) {
+
+  .signup-card {
+    padding: 25px 18px;
+  }
+
+  .name-fields {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .signup-card h1 {
+    font-size: 24px;
+  }
+
+  .rules-grid {
+    grid-template-columns: 1fr;
+  }
+}
